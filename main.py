@@ -1,4 +1,4 @@
-numbers = [1, 2, 3]
+# numbers = [1, 2, 3]
 # Original way:
 # new_list = []
 
@@ -7,4 +7,8 @@ numbers = [1, 2, 3]
 #     new_list.append(add_1)
 
 # List Comprehension:
-new_list = [n + 1 for n in numbers]
+# new_list = [n + 1 for n in numbers]
+
+doubled_numbers = [n * 2 for n in range(1, 5)]
+
+print(doubled_numbers)
