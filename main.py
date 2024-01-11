@@ -1,9 +1,9 @@
-student_dict = {"student": ["Angela", "James", "Lily"], "score": [56, 76, 98]}
-
 import pandas
 
-student_data_frame = pandas.DataFrame(student_dict)
+data = pandas.read_csv("nato_phonetic_alphabet.csv")
 
-for index, row in student_data_frame.iterrows():
-    if row.student == "Angela":
-        print(row.score)
+# TODO 1. Create a dictionary in this format:
+# {"A": "Alfa", "B": "Bravo"}
+
+result = {row.letter: row.code for (index, row) in data.iterrows()}
+print(result)
